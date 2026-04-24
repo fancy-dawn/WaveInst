@@ -8,6 +8,20 @@ WaveInst consists of four main components: the backbone, the encoder, the decode
 <img src="./assets/waveinst.png">
 </center>
 
+## Demos
+
+We compare WaveInst with several methods on juvenile tree segmentation. In the trunk region, WaveInst produces more complete masks and finer details than YOLACT, YOLO11l-seg, SparseInst, FastInst, and RF-DETR-Seg. For fine branches, only WaveInst successfully segments them, whereas other methods fail. Although WaveInst does not fully connect the fine branches to the main trunk, its overall performance surpasses RF-DETR-Seg, demonstrating superior precision and detail handling.
+
+<center>
+<img src="./assets/juvenile.png">
+</center>
+
+We also evaluate WaveInst against the SAM3 foundation model. With single prompts, SAM3 can segment tree regions but cannot distinguish growth stages or tree species. Using multiple prompts to specify categories results in mask errors, overlaps, and unstable performance, making it difficult to differentiate classes. Overall, WaveInst provides more accurate and fine-grained segmentation results across different datasets.
+
+<center>
+<img src="./assets/fine-grained.png">
+</center>
+
 ## Installation and Prerequisites
 
 This project is built upon the excellent framework [mmdetection](https://github.com/open-mmlab/mmdetection), and you should install mmdetection first, please check [official installation guide](https://mmdetection.readthedocs.io/en/latest/get_started.html) for more details. 
@@ -47,7 +61,7 @@ You can download our pre-trained weights on this model from the following link: 
 
 ## Acknowledgements
 
-WaveInst is based on [SparseInst](https://github.com/hustvl/SparseInst), [mmdetection](https://github.com/open-mmlab/mmdetection), [SynthTree43k](https://github.com/norlab-ulaval/PercepTreeV1), and we sincerely thanks for their code and contribution to the community!
+WaveInst is based on [SparseInst](https://github.com/hustvl/SparseInst), [MMDetection](https://github.com/open-mmlab/mmdetection), [SynthTree43k](https://github.com/norlab-ulaval/PercepTreeV1), and we sincerely thanks for their code and contribution to the community!
 
 ## License
 
