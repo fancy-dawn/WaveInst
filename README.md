@@ -57,7 +57,7 @@ pip install -v -e .
 
 [SynthTree43k](https://github.com/norlab-ulaval/PercepTreeV1) is proposed to address the lack of large-scale annotated datasets for forest environments, aiming to include as many realistic conditions as possible while avoiding manual annotation. The dataset consists of over 43k synthetic images—40k for training, 1k for validation, and 2k for testing—along with more than 190k annotated trees, generated using the Unity engine to simulate diverse tree models, environmental conditions, and lighting variations. Each image is annotated with bounding boxes, segmentation masks, and keypoints, providing comprehensive data for forest-related vision tasks.
 
-You can download our pre-trained weights on this model from the following link: [Baidu Netdisk](https://pan.baidu.com/s/1XKOgKN8xxwZe-z8nBM9muw?pwd=wyfq).
+You can download our pre-trained weights on this model from the following link: [Baidu Netdisk](https://pan.baidu.com/s/1IBE5iDjqkW39PuYXAMWxog?pwd=xry3).
 
 ## Acknowledgements
 
